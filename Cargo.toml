@@ -30,14 +30,10 @@ redis = "^0.22.1"
 bb8-redis = "^0.12.0"  # redis connection pool
 chrono = { version = "^0.4", default_features = false }
 url = "2.3.1"
-
-# gRPC
 tonic = "^0.8.3"  # grpc
 tonic-build = "^0.8.4"  # grpc
 tonic-health = "^0.8.0"  # grpc
 prost = "^0.11.6"  # protobuf support
-
-# CLI
 clap = "^4.1.4"
 tokio-util = "0.7.4"
 k8s-openapi = "^0.17.0"
@@ -55,11 +51,7 @@ rust-toolchain-version = "1.67.1"
 # CI backends to support (see 'cargo dist generate-ci')
 ci = ["github"]
 # Target platforms to build apps for (Rust target-triple syntax)
-targets = ["x86_64-unknown-linux-gnu", "x86_64-apple-darwin", "aarch64-apple-darwin"]
-
-[profile.release]
-lto = true
-codegen-units = 1
+targets = ["x86_64-unknown-linux-gnu", "x86_64-apple-darwin", "x86_64-pc-windows-msvc"]
 
 # The profile that 'cargo dist' will build with
 [profile.dist]
