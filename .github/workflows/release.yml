@@ -90,7 +90,7 @@ jobs:
             install-dist: curl --proto '=https' --tlsv1.2 -LsSf https://github.com/axodotdev/cargo-dist/releases/download/v0.0.3/cargo-dist-v0.0.3-installer.sh | sh
           - os: ubuntu-latest
             dist-args: --artifacts=local --target=aarch64-apple-darwin
-            install-dist: irm  https://github.com/axodotdev/cargo-dist/releases/download/v0.0.3/cargo-dist-v0.0.3-installer.ps1 | iex
+            install-dist: curl --proto '=https' --tlsv1.2 -LsSf https://github.com/axodotdev/cargo-dist/releases/download/v0.0.3/cargo-dist-v0.0.3-installer.sh | sh
 
     runs-on: ${{ matrix.os }}
     env:
