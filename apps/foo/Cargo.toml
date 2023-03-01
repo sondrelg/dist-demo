@@ -1,6 +1,6 @@
 [package]
 name = "foo"
-version = "0.1.4"
+version = "0.1.5"
 edition = "2021"
 publish = true
 
@@ -17,10 +17,3 @@ tracing = "^0.1.37"  # logging
 tracing-subscriber = "^0.3"  # logging
 tokio = { version = "^1", features = ["macros", "io-std", "rt-multi-thread"] }
 k8s-openapi = { version = "^0.17.0", features = ["v1_24", "api"] }
-tokio-util = "0.7.4"
-serde = { version = "^1.0.152", features = ["derive"] }
-serde_json =  "^1.0.91"
-reqwest = { version = "^0.11.12", features = ["json"] }
-schemars = "^0.8.11"
-dialoguer = "0.10.3"
-cli-clipboard = "0.4.0"
